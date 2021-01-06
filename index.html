@@ -4,39 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/logo-netflix.png">
+  <link rel="stylesheet" href="./styles/main.css">
   <title>Netflix Clone</title>
 </head>
 <body>
-  <div>
-    Series
-    Películas
-    Mi lista
-  </div>
-
-  <video src="./images/matrix.mp4" autoplay loop muted></video>
-
-  <div>
-    Surrealista
-    Distópico
-    Hábil
-    Siniestro
-    Emocionante
-  </div>
-  <div>
-    Mi lista
-    Reproducir
-    Info
-  </div>
-
-  Populares en Netflix
-  Series japonesas anime
-  Series de EE.UU. sobre crimenes
-
-  <div>
-    Inicio
-    Próximamente
-    Buscar
-    Descargas
-  </div>
+  <main class="main-container">
+    <header class="header">
+      <figure class="logo-header">
+        <img src="./images/logo-netflix.png" alt="Netflix logo" width="35">
+      </figure>
+      <nav class="nav-header">
+        <ul class="nav-items">
+          <li>
+            <a href="#">Series</a>
+          </li>
+          <li>
+            <a href="#">Películas</a>
+          </li>
+          <li>
+            <a href="#">Mi lista</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="featured-container">
+      <video src="./images/matrix.mp4" class="featured-video"></video>
+      <div>
+        Surrealista
+        Distópico
+        Hábil
+        Siniestro
+        Emocionante
+      </div>
+      <div>
+        Mi lista
+        Reproducir
+        Info
+      </div>
+    </section>
+    <section>
+      Populares en Netflix
+      Series japonesas anime
+      Series de EE.UU. sobre crimenes
+    </section>
+    <footer>
+      Inicio
+      Próximamente
+      Buscar
+      Descargas
+    </footer>
+  </main>
 </body>
 </html>
