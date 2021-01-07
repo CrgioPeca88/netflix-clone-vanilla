@@ -168,9 +168,9 @@ body {
 }
 
 .main-container .footer {
-  /*border: 1px solid greenyellow;*/
+  border: 1px solid greenyellow;
   background-color: black;
-  padding: 15px;
+  padding: 10px;
   position: sticky;
   bottom: 0;
   left: 0;
@@ -178,4 +178,38 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.main-container .footer .button-secondary {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  width: 100px;
+}
+
+.main-container .footer .button-secondary:before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.main-container .footer .icon-home:before {
+  background: url('../images/icons/home.svg');
+}
+
+.main-container .footer .icon-soon:before {
+  background: url('../images/icons/cinema.svg');
+}
+
+.main-container .footer .icon-search:before {
+  background: url('../images/icons/search.svg');
+}
+
+.main-container .footer .icon-download:before {
+  background: url('../images/icons/dowload.svg');
 }
