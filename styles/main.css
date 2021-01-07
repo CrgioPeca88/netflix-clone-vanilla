@@ -168,7 +168,7 @@ body {
 }
 
 .main-container .footer {
-  border: 1px solid greenyellow;
+  /*border: 1px solid greenyellow;*/
   background-color: black;
   padding: 15px;
   position: sticky;
