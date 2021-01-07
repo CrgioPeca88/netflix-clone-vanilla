@@ -4,6 +4,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Netflix Bold';
   src: url('../fonts/AvenirNextLTPro-Bold.otf');
@@ -60,8 +61,91 @@ body {
 
 .main-container .featured-container {
   margin-top: -40px;
+  position: relative;
 }
 
 .main-container .featured-container .featured-video {
   width: 100%
+}
+
+.main-container .featured-container .featured-actions-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to top, #1d1d1d 0%, #1d1d1d 30%, transparent 100%);
+}
+
+.main-container .featured-container .featured-actions-container .featured-tags {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 5px;
+}
+
+.main-container .featured-container .featured-actions-container .featured-tags li:before {
+  content: '■';
+  margin-right: 5px;
+}
+
+.main-container .featured-container .featured-actions-container .featured-tags li:first-child:before {
+  display: none;
+}
+
+.main-container .featured-container .featured-actions-container .featured-actions {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-container .featured-actions-container .featured-actions .button-secondary {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  width: 60px;
+}
+
+.main-container .featured-actions-container .featured-actions .button-secondary:before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.main-container .featured-actions-container .featured-actions .button {
+  cursor: pointer;
+  background: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.main-container .featured-actions-container .featured-actions .button:before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 4px;
+}
+
+.main-container .featured-actions-container .featured-actions .icon-list:before {
+  background: url('../images/icons/plus.svg');
+}
+
+.main-container .featured-actions-container .featured-actions .icon-info:before {
+  background: url('../images/icons/info.svg');
+}
+
+.main-container .featured-container .featured-actions-container .featured-actions .icon-play:before {
+  background: url('../images/icons/play.svg');
 }
