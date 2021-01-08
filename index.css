@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Netflix Regular';
-  src: url('../fonts/AvenirNextLTPro-Regular.otf');
+  src: url('./assets/fonts/AvenirNextLTPro-Regular.otf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Netflix Bold';
-  src: url('../fonts/AvenirNextLTPro-Bold.otf');
+  src: url('./assets/fonts/AvenirNextLTPro-Bold.otf');
   font-weight: 700;
   font-style: normal;
 }
@@ -139,15 +139,15 @@ body {
 }
 
 .main-container .featured-actions-container .featured-actions .icon-list:before {
-  background: url('../images/icons/plus.svg');
+  background: url('./assets/images/icons/plus.svg');
 }
 
 .main-container .featured-actions-container .featured-actions .icon-info:before {
-  background: url('../images/icons/info.svg');
+  background: url('./assets/images/icons/info.svg');
 }
 
 .main-container .featured-container .featured-actions-container .featured-actions .icon-play:before {
-  background: url('../images/icons/play.svg');
+  background: url('./assets/images/icons/play.svg');
 }
 
 .main-container .movies-container {
@@ -211,5 +211,4 @@ body {
   .main-container .featured-container .featured-actions-container .featured-tags {
     font-size: 50%;
   }
-
 }
