@@ -201,3 +201,10 @@ body {
   fill: white;
   color: white;
 }
+
+@media (max-width: 600px) {
+  .main-container {
+    width: 100%;
+    margin: 0;
+  }
+}
