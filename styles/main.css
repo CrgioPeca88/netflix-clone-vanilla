@@ -15,7 +15,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #1d1d1d;
+  background-image: linear-gradient(to top, black 0%, black 60%, #1d1d1d 75%, #1d1d1d 100%);
   color: white;
   font-family: 'Netflix Regular';
 }
@@ -153,7 +153,7 @@ body {
 .main-container .movies-container {
   background-color: black;
   padding-top: 20px;
-  padding: 0px 15px;
+  padding: 15px 15px 20px 15px;
 }
 
 .main-container .movies-container .movies-covers {
@@ -168,48 +168,36 @@ body {
 }
 
 .main-container .footer {
-  border: 1px solid greenyellow;
   background-color: black;
   padding: 10px;
   position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.main-container .footer-list {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  list-style: none;
 }
 
-.main-container .footer .button-secondary {
-  cursor: pointer;
-  background: none;
-  border: none;
+.main-container .footer-list .footer-button a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: gray;
+}
+
+.main-container .footer-list .footer-button a path {
+  fill: gray;
+}
+
+.main-container .footer-list .footer-button:hover a, .main-container .footer-list .footer-button:hover path {
+  fill: white;
   color: white;
-  font-size: 14px;
-  width: 100px;
-}
-
-.main-container .footer .button-secondary:before {
-  content: '';
-  display: block;
-  width: 25px;
-  height: 25px;
-  margin: auto;
-  margin-bottom: 5px;
-}
-
-.main-container .footer .icon-home:before {
-  background: url('../images/icons/home.svg');
-}
-
-.main-container .footer .icon-soon:before {
-  background: url('../images/icons/cinema.svg');
-}
-
-.main-container .footer .icon-search:before {
-  background: url('../images/icons/search.svg');
-}
-
-.main-container .footer .icon-download:before {
-  background: url('../images/icons/dowload.svg');
 }
