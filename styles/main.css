@@ -207,4 +207,9 @@ body {
     width: 100%;
     margin: 0;
   }
+
+  .main-container .featured-container .featured-actions-container .featured-tags {
+    font-size: 50%;
+  }
+
 }
