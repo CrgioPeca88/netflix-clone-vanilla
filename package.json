@@ -1,0 +1,16 @@
+{
+  "name": "netflix-clone-vanilla",
+  "version": "1.0.0",
+  "description": "Project with Vanilla Javascript, CSS and HTML",
+  "license": "MIT",
+  "author": "CrgioPeca88 <https://github.com/CrgioPeca88>",
+  "keywords": [
+    "javascript"
+  ],
+  "scripts": {
+    "start": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
