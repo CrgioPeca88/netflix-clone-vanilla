@@ -121,6 +121,7 @@ body {
 }
 
 .main-container .featured-actions-container .featured-actions .button {
+  width: 140px;
   cursor: pointer;
   background: white;
   border: none;
@@ -128,6 +129,7 @@ body {
   border-radius: 3px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .main-container .featured-actions-container .featured-actions .button:before {
@@ -148,6 +150,14 @@ body {
 
 .main-container .featured-container .featured-actions-container .featured-actions .icon-play:before {
   background: url('./assets/images/icons/play.svg');
+}
+
+.main-container .featured-container .featured-actions-container .featured-actions .icon-pause:before {
+  background-image: url('./assets/images/icons/pause.png');
+  background-repeat: no-repeat;
+  background-size: 20px 17px;
+  background-position-y: 4px;
+  background-position-x: 5px;
 }
 
 .main-container .movies-container {
