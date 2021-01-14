@@ -9,7 +9,7 @@ VideoPlayer.prototype.playPause = function(button) {
     this.video.play();
     this.video.loop = true;
     button.firstChild.innerText = 'Pausar';
-    button.className = 'button icon-pause';
+    button.className = 'button-pause icon-pause';
   } else {
     this.video.pause();
     button.firstChild.innerText = 'Reproducir';
