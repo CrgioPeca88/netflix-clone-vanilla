@@ -252,8 +252,8 @@ body {
 }
 
 .main-container .footer-list .footer-button:hover a, .main-container .footer-list .footer-button:hover path {
-  fill: white;
-  color: white;
+  fill: whitesmoke
+  color: whitesmoke;
 }
 
 /*============================================================================*/
