@@ -14,8 +14,11 @@ const renderService = new RenderService();
 
 function getInitialData() {
   const popularCoversContainer = document.getElementById('popular-covers-container');
+  const japaneseCoversContainer = document.getElementById('japanese-covers-container');
   const popularMovies = moviesService.getPopularMovies();
+  const japaneseSeries = moviesService.getJapaneseSeries();
   renderService.renderMoviesCover(popularCoversContainer, popularMovies);
+  renderService.renderMoviesCover(japaneseCoversContainer, japaneseSeries);
 }
 
 ppButton.onclick = () => {
