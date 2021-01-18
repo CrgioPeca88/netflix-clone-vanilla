@@ -3,6 +3,7 @@
 import VideoPlayer from './src/modules/shared/video-player.js';
 import MoviesService from './src/modules/core/services/apis/movies.service.js';
 import RenderService from './src/modules/core/services/render.service.js';
+import Constants from './src/modules/shared/constants.js';
 
 const video = document.getElementById('featured-video');
 const ppButton = document.getElementById('play-button');
@@ -10,7 +11,7 @@ const videoPlayer = new VideoPlayer({
   video: video
 });
 const moviesService = new MoviesService();
-const renderService = new RenderService();
+const renderService = new RenderService(Constants);
 
 function getInitialData() {
   const popularCoversContainer = document.getElementById('popular-covers-container');
