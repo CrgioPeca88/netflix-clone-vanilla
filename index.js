@@ -15,10 +15,13 @@ const renderService = new RenderService();
 function getInitialData() {
   const popularCoversContainer = document.getElementById('popular-covers-container');
   const japaneseCoversContainer = document.getElementById('japanese-covers-container');
+  const eeuuCoversContainer = document.getElementById('eeuu-covers-container');
   const popularMovies = moviesService.getPopularMovies();
   const japaneseSeries = moviesService.getJapaneseSeries();
+  const eeuuSeries = moviesService.getEEUUSeries();
   renderService.renderMoviesCover(popularCoversContainer, popularMovies);
   renderService.renderMoviesCover(japaneseCoversContainer, japaneseSeries);
+  renderService.renderMoviesCover(eeuuCoversContainer, eeuuSeries);
 }
 
 ppButton.onclick = () => {

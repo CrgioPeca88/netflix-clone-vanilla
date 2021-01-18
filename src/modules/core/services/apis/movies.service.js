@@ -33,7 +33,11 @@ MoviesService.prototype.getPopularMovies = function() {
 }
 
 MoviesService.prototype.getJapaneseSeries = function() {
-  return [...this.movies].reverse(); 
+  return [...this.movies].reverse();
+}
+
+MoviesService.prototype.getEEUUSeries = function() {
+  return this.movies;
 }
 
 export default MoviesService;
