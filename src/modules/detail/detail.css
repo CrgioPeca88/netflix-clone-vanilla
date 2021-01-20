@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Netflix Regular';
+  src: url('../../../assets/fonts/AvenirNextLTPro-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Netflix Bold';
+  src: url('../../../assets/fonts/AvenirNextLTPro-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Netflix Regular';
+  color: whitesmoke;
+  background-color: black;
+}
+
+.main-container {
+  padding: 0 3%;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer .footer-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-list .footer-button a {
+  text-decoration: none;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer .footer-list .footer-button path {
+  fill: gray;
+}
+
+.footer .footer-list .footer-button:hover path,
+.footer .footer-list .footer-button:hover a {
+  color: whitesmoke;
+  fill: whitesmoke;
+}
+
+/*===========================ANIMATIONS=======================================*/
+
+.fadeInUp {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}

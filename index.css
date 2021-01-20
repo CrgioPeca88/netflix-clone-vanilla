@@ -251,7 +251,8 @@ body {
   fill: gray;
 }
 
-.main-container .footer-list .footer-button:hover a, .main-container .footer-list .footer-button:hover path {
+.main-container .footer-list .footer-button:hover a,
+.main-container .footer-list .footer-button:hover path {
   fill: whitesmoke
   color: whitesmoke;
 }
