@@ -156,6 +156,15 @@ body {
   fill: whitesmoke;
 }
 
+.movie-information .movie-information-data .mid-synopsis {
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.movie-information .movie-information-data .mid-secondary {
+  color: gray;
+}
+
 .footer {
   position: sticky;
   bottom: 0;
