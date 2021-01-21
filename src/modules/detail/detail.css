@@ -40,11 +40,25 @@ body {
   fill: #ab2e1c;
 }
 
+.movie-wallpaper {
+  margin: 0 auto;
+  width: 60%;
+  height: 50vh;
+}
+
+.movie-wallpaper .movie-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 1px -25px;
+}
+
 .footer {
   position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: black;
 }
 
 .footer .footer-list {
@@ -93,5 +107,21 @@ body {
   to {
     opacity: 1;
     transform: translate3d(0,0,0);
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-container {
+    padding: 0;
+  }
+
+  .movie-wallpaper {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .movie-wallpaper .movie-img {
+    object-fit: contain;
+    object-position: 50% 0px;
   }
 }
