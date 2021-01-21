@@ -103,6 +103,59 @@ body {
   padding: 3px 3px 1px 3px;
 }
 
+.movie-information .movie-information-actions {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.movie-information .movie-information-actions .primary-button {
+  width: 35em;
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  font-family: 'Netflix Bold';
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.movie-information .movie-information-actions .play-button {
+  background-color: whitesmoke;
+  border: 1px solid black;
+}
+
+.movie-information .movie-information-actions .play-button:hover {
+  box-shadow: 0px 0px 4px whitesmoke;
+}
+
+.movie-information .movie-information-actions svg {
+  width: 30px;
+  height: 30px;
+}
+
+.movie-information .movie-information-actions .play-button path {
+  fill: black;
+}
+
+.movie-information .movie-information-actions .download-button {
+  background-color: #4e4c4c;
+  color: whitesmoke
+}
+
+.movie-information .movie-information-actions .download-button:hover {
+  box-shadow: 0px 0px 4px whitesmoke;
+}
+
+.movie-information .movie-information-actions .download-button path {
+  fill: whitesmoke;
+}
+
 .footer {
   position: sticky;
   bottom: 0;
