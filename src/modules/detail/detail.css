@@ -23,6 +23,23 @@ body {
   padding: 0 3%;
 }
 
+.header {
+  padding: 5px 10px;
+}
+
+.header svg {
+  width: 35px;
+  height: 35px;
+}
+
+.header path {
+  fill: whitesmoke;
+}
+
+.header:hover path {
+  fill: #ab2e1c;
+}
+
 .footer {
   position: sticky;
   bottom: 0;
@@ -36,7 +53,8 @@ body {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
-  padding: 0;
+  padding: 10px 0px;
+  margin: 0;
 }
 
 .footer .footer-list .footer-button a {
