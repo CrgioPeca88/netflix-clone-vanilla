@@ -19,6 +19,19 @@ body {
   background-color: black;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 15px #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ab2e1c;
+  border-radius: 15px;
+}
+
 .main-container {
   padding: 0 3%;
 }
@@ -205,6 +218,35 @@ body {
 
 .movie-information .movie-actions .movie-actions-list path {
   fill: whitesmoke;
+}
+
+.similar-movies {
+  padding: 0px 20px;
+  margin-bottom: 5px;
+}
+
+.similar-movies .movies-covers {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.similar-movies .movies-covers img {
+  width: 13em;
+}
+
+.similar-movies ::-webkit-scrollbar {
+  height: 7px;
+}
+
+.similar-movies ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #2d2d2d;
+  border-radius: 15px;
+}
+
+.similar-movies ::-webkit-scrollbar-thumb {
+  background: #1d1d1d;
+  border-radius: 15px;
 }
 
 .footer {
